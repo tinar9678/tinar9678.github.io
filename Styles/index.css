@@ -1,7 +1,7 @@
 /*css file for splashscreen*/
 
 html {
-	background-image: "file:///tinar9678/tinar9678.github.io/pictures/welcome.jpg" no-repeat center center fixed; 
+	background: url("tinar9678.github.io/pictures/welcome.jpg"); 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
