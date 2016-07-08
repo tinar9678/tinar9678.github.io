@@ -18,7 +18,6 @@ h1 {
 }
 
 #center {
-	position: fixed;
 	line-height:5%;
 	top: 15%;
 	left: 50%;
@@ -28,7 +27,6 @@ h1 {
 }
 
 .content {
-	position: fixed;
 	top: 100%;
 	width: 100%;
 	height: 350px;
