@@ -1,30 +1,226 @@
-<!DOCTYPE html>
 <html>
+
 <head>
-	<title>Welcome Page</title>
-	<meta charset="utf-8">
-	<meta name = "viewport" content="width=device-width, initial-scale=1">
-	<link href="../Styles/index.css" rel = "stylesheet"type = "text/css">
-	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles/normalize.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="Styles/main.css">
+  <script src="main.js"></script>
+  <title> tina ryu </title>
 </head>
 
 <body>
-	<header>
-		<div id='center'>
-			<h1>greetings, old sport</h1>
-		</div>
-	</header>
 
-	<div class='content'>
-		<br><h3><strong>welcome!</strong></h3></br>
-		<p>
-			<br>my name is tina, a passionate undergraduate student studying computer science (games) at the university of southern california. i will be graduating in 2019!</br> 
+    <!-- Explain how to build navbar without Bootstrap, ul li float right -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!-- Explain target blank = new tab -->
+          <a href="http://www-scf.usc.edu/~csci201/" target="_blank">
+            <!-- Explain always use alt an image -->
+            <img
+              src="images/daisy.png"
+              alt="logo"
+              id="flower-logo"
+            />
+          </a>
+        </div>
+        <ul class="nav navbar-nav">
+          <!-- DON'T WRITE THE JAVASCRIPT YET. IGNORE ONCLICK-->
+          <li class="active"><a href="#" onclick="clearAll()">Home</a></li>
+          <li><a href="#about" onclick="click()">About</a></li>
+          <li><a href="#divider" onclick="click()">Projects</a></li>
+          <li><a href="#" onclick="click()">Contact</a></li>
+          <li><a href="https://drive.google.com/file/d/0B_dZlTETuTSGU0YxcllSdDZZUHc/view?usp=sharing">Resume</a></li>
 
-			<br>i am passionate about empowering women in technology and encourage more young ladies to code. moreover, i am a video games geek, hence my major's emphasis on games.</br>
+        </ul>
+      </div>
+    </nav>
 
-			<br>one can also describe me as a lover of health and fitness -- i am now two months into the vegan diet!</br> 
-		</p>
-	</div>
+  <div class="header">
+    <h1> tina ryu </h1>
+    <div class="center">
+      <h3>developer // designer // dreamer</h3>
+    </div>
+  </div>
 
+  <img class="tinamain" src="images/welcome.jpg" width="700" height="450" />
+
+  <div id="about">
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/pV5RoaMKkIU" frameborder="0"></iframe>
+    <span class="aboutblurb">
+      <h2>hi, i'm tina!</h2>
+      <p>i am a sophomore majoring in computer science and game design at the university of southern california.</p>
+      <p>during my free time, i like to code, play video games, knit, cook, read, and make travel vlogs.</p>
+      <p>this summer, i will be interning at Google and will be working on the new youtube app called "youtube go"!</p>
+      <h2>don't be a stranger...stay in touch!</h2>
+      <!-- <p>links to my social media</p> -->
+      <span id="social media">
+        <a href=""
+        <img class="smicon" width="100" height="100" src="images/github.png"/>
+        </a>
+      </span>
+    </span>
+  </div>
+
+
+  <span class="icons">
+   <span class="box"> 
+    <img id="ed" src="images/gradcap.png" title="Education"/>
+   </span>
+
+
+    <span id="eddescript" class="box" style="opacity: 0;"> 
+      <p> univ. of southern california</p>
+    </span>
+
+
+    <span class="box">
+      <img id="exp" src="images/code.png" title="Experience"/>
+    </span>
+
+   <span id="expdescript" class="box" style="opacity: 0;"> 
+      <p> hello</p>
+   </span>
+
+    <span class="box">
+      <img id="design" src="images/brush.png" title="Design"/>
+    </span>
+    
+   <span id="desdescript" class="box" style="opacity: 0;"> 
+      <p> hello</p>
+   </span>
+
+  </span>
+
+  <div class="clear"></div>
+
+
+  <div class="container-fluid" id="first-block">
+    <div class="row">
+      <h1 id="divider">Projects</h1>
+      </div>
+      <br />
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="http://games.usc.edu/quiet-of-the-leaves/">
+              <img class ="headshot hvr hvr-grow" src="http://games.usc.edu/wp-content/uploads/2016/10/Scene-Flood-area.png" />
+              <h2 id="title-1">Quiet of the Leaves</h2>
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href=http://games.usc.edu/portfolio-item/wideawake/>
+              <img class ="headshot hvr hvr-grow" src="http://games.usc.edu/wp-content/uploads/2015/02/WA-Final-Logo.jpg" />
+              <h2 id="title-2">Wide Awake</h2>
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <img class ="headshot hvr hvr-grow" src="images/Clique_logo.png" />
+            <h2 id="title-3">Clicque</h2>
+          </div>
+          <div class="col-sm-4">
+            <a href="http://www.jpl.nasa.gov/news/news.php?feature=6590">
+              <img class ="headshot hvr hvr-grow" src="images/audrey-hepburn.png" />
+              <h2 id="title-4">Audrey AI</h2>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+
+  $(document).ready(function(){
+    $('#ed').mouseenter(function(){
+      $('#eddescript').animate({
+        'opacity': '+=1'
+      });
+    });
+    $("#ed").mouseleave(function(){
+      $('#eddescript').animate({
+        'opacity': '-=1'
+      });
+    });
+
+
+    // $("#exp").mouseenter(function(){
+    //  $('#expdescript').animate({
+    //     'opacity': '+=1'
+    //   });
+    // });
+    // $("#exp").mouseleave(function(){
+    //  $('#expdescript').animate({
+    //     'opacity': '-=1'
+    //   });
+
+    // $("#design").mouseenter(function(){
+    //   $('#desdescript').animate({
+    //     'opacity': '+=1'
+    //   });
+    // });
+    // $("#design").mouseleave(function(){
+    //   $('#desdescript').animate({
+    //     'opacity': '-=1'
+    //  });
+
+  });
+
+    //   $('#ed').mouseenter(function(){
+    //   $('#eddescript').animate({
+    //     'opacity': '+=1'
+    //   });
+    // });
+    // $("#ed").mouseleave(function(){
+    //   $('#eddescript').animate({
+    //     'opacity': '-=1'
+    //   });
+    // });
+
+    // $("exp").mouseenter(function(){
+    //  $('#expdescript').animate({
+    //     'opacity': '+=1'
+    //   });
+    // });
+    // $("exp").mouseleave(function(){
+    //  $('#expdescript').animate({
+    //     'opacity': '-=1'
+    //   });
+
+    // $("design").mouseenter(function(){
+    //  $('#desdescript').animate({
+    //     'opacity': '+=1'
+    //   });
+
+    // $("design").mouseenter(function(){
+    //  $('#desdescript').animate({
+    //     'opacity': '-=1'
+    //   });
+  // function visible1(){
+  //   var elem = document.getElementById('eddescript');
+  //   if(elem.style.visibility == 'hidden')
+  //     elem.style.visibility = 'visible';
+  //   else { elem.style.visibility = 'hidden';}
+  // }
+
+  //   function visible2(){
+  //   var elem = document.getElementById('expdescript');
+  //   if(elem.style.visibility == 'hidden')
+  //     elem.style.visibility = 'visible';
+  //   else { elem.style.visibility = 'hidden';}
+  // }
+
+  //   function visible3(){
+  //   var elem = document.getElementById('desdescript');
+  //   if(elem.style.visibility == 'hidden')
+  //     elem.style.visibility = 'visible';
+  //   else { elem.style.visibility = 'hidden';}
+  // }
+</script>
+
 </html>

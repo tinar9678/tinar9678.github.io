@@ -1,0 +1,142 @@
+    
+    @import url('https://fonts.googleapis.com/css?family=Coming+Soon|Shadows+Into+Light+Two');
+
+
+    body {
+      font-family: 'Coming Soon';
+    }
+
+    .header {
+      background-color: #ffdae9;
+
+    }
+
+   .tinamain {
+     padding:1px;
+     border: 2px solid black;
+     display: block;
+     margin: 0 auto 30px
+
+   }
+
+   h1 {
+    margin-top:-20px;
+    text-align: center;
+    font-size: 75px;
+
+  }
+
+  .video {
+    /*display: block;*/
+    padding-top: 20px;
+    padding-left: 40px;
+    /*margin: 0 auto;*/
+    float: none;
+    clear: both;
+  }
+
+  .center {
+    text-align: center;
+
+
+  }
+
+  .box {
+    background: #ffdae9;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 185px;
+    line-height: 185px;
+    text-align: center;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    width: 185px;
+    float: left;
+    display: inline-block;
+    margin:20px;
+  }
+  .box:hover {
+    background: #E6E6FA;
+  }
+
+  h3 { line-height: 30px; }
+
+  .contact-info p {
+    margin: 0;
+    margin-bottom: 2px;
+  }
+
+  .navbar {
+    background-color:#ffdae9;
+    padding: 2px 0px;
+  }
+
+  #flower-logo {
+    height: 50px;
+    margin: 0 10px;
+  }
+
+
+  /* explain how to override bootstrap */
+  .navbar-default .navbar-nav>li>a {
+      color: ##FFFFFF;
+  }
+
+  #ed {
+    padding-top: 20;
+    height: 160px;
+    display: block;
+    margin: 0 auto 30px;
+  }
+
+  #exp {
+    display: block;
+    margin: auto;
+    width: 70%;
+    margin-top: 60px;
+  }
+
+  #design {
+    display: block;
+    margin: auto;
+    width: 55%;
+    margin-top: 20px;
+  }
+
+  #about{
+   background-color: #ffdae9;
+   height: 345px;
+    /*display: inline-block;*/
+  }
+
+  .aboutblurb {
+    float: center;
+    display: inline-block;
+    margin: auto;
+    /*text-align: center;*/
+    padding:15px;
+  }
+
+  #divider {
+    margin-top: 15px;
+    padding:10px;
+    font-size: 50;
+    text-align: center;
+    border: 5px solid #FFF8E7;
+    background-color:#ffdae9;
+  }
+
+  img.headshot{
+    border-radius: 50%;
+    height:150px;
+  }
+
+  .clear { clear:both; }
+
+  .smicon {
+    padding: 10;  
+    margin-left: -26;
+    margin-bottom: 40;
+  }
+
