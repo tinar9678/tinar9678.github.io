@@ -155,7 +155,7 @@ body {
   margin-bottom: 30px;
   border: 1.5px solid #8da1b9;
   border-radius: 4px;
-  padding: 10px 10px 10px 10px;
+  padding: 0px 10px 10px 10px;
   transition: 0.3s ease-in-out all;
   background-color: white;
   width: 350px;
@@ -169,12 +169,12 @@ body {
 .grid {
   display: flex;
   margin-bottom: 30px;
-  padding-left: 7%;
+  padding-left: 2%;
   padding-top:2%;
   padding-right: 7%;
   flex-wrap: wrap;
   align-content: flex-start;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 h2 {
