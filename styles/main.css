@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+
+body {
+  background: #ffe8e5;
+}
+
+.photobook {
+  padding: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+#logo img {
+  width: 150px;
+  height: 150px;
+}
+
+#topnav ul {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+#topnav {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6em;
+  font-size: 20px;
+  text-transform: lowercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  width: 100%;
+  margin-bottom: -1%;
+}
+
+#bottom-line {
+  border-top: 3px solid white;
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 50%; /* Change this to whatever width you want. */
+  padding-top: 20px; /* This creates some space between the element and the border. */
+}
+
+#line {
+  border-top: 3px solid white;
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 90%; /* Change this to whatever width you want. */
+  padding-top: 20px; /* This creates some space between the element and the border. */
+}
+
+#topnav li {
+  padding-right: 5%;
+  display: inline-block;
+  float: none;
+}
+
+#topnav a {
+  color: #8da1b9;
+  text-decoration:none;
+}
+
+#title {
+  padding-left: 7%;
+  color: #8da1b9;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+}
+
+#corevalues-doodle {
+  display: block;
+  padding-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 60%;
+}
+
+#connection-intro {
+  text-align: center;
+  color: #8da1b9;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+}
+
+#connection-body, #connection-social, #connection-resume {
+  text-align: center;
+  color: #8da1b9;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+}
+
+.emoji-container {
+  display: flex;
+  justify-content: center;
+}
+
+#coffee-emoji, #wave-emoji {
+  height: 3%;
+  width: 3%;
+  padding-bottom: 10px;
+}
+
+#me-photo, #hiking-photo, #merciv-photo {
+  margin-left: 5%;
+  margin-right: auto;
+  height: auto;
+  width: 25%;
+  border: 10px solid #ddd;
+  border-radius: 4px;
+}
+
+#aboutdesc, #corevalues-intro  {
+  display: block; /* This will put the pseudo element on its own line. */
+  padding-left: 7%;
+  padding-right: 7%;
+  color: #8da1b9;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+}
+
+.custom-navbar {
+  background-color: custom-navbar;
+}
+
+.custom-navbar .navbar-toggle {
+  border-color: #8da1b9;
+}
+
+.custom-navbar .navbar-collapse,
+.custom-navbar .navbar-form {
+  border-color: #8da1b9;
+}
+
+.custom-navbar .navbar-toggle .icon-bar {
+  background-color: #8da1b9;
+}
+
+.navbar-collapse.collapse.in {
+  display: block!important;
+
+}
+
+#card {
+  margin-bottom: 30px;
+  border: 1.5px solid #8da1b9;
+  border-radius: 4px;
+  padding: 10px 10px 10px 10px;
+  transition: 0.3s ease-in-out all;
+  background-color: white;
+  width: 350px;
+  min-height: 150px;
+}
+
+#card:hover {
+  background-color: #d6dde6;
+}
+
+.grid {
+  display: flex;
+  margin-bottom: 30px;
+  padding-left: 7%;
+  padding-top:2%;
+  padding-right: 7%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 20px;
+  color: #8da1b9;
+  font-family: 'Raleway', sans-serif;
+  transition: 0.3s ease all;
+  padding-top: 5%;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  color: #8da1b9;
+}

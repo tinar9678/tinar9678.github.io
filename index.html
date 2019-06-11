@@ -1,0 +1,170 @@
+<!doctype html>
+<!-- tina's corner -->
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="designs/logo/logov2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/socialmedia.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#proj-nav-item").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".experiences").offset().top
+                }, 1000);
+            });
+            $("#conferences-nav-item").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".conferences").offset().top
+                }, 1000);
+            });
+        });
+
+
+    </script>
+
+    <title> tina's corner </title>
+  </head>
+
+  <body>
+    <div class="headcontainer">
+      <div id="logo">
+        <a href="#" onclick="clearAll()">
+          <img src="designs/logo/logoanim.gif"/>
+        </a>
+      </div>
+
+    <div id="topnav">
+      <nav class="navbar custom-navbar">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnav" aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="mainnav">
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="#">tina</a></li>
+            <li id="proj-nav-item"><a href="#experiences" onclick="click()">experiences</a></li>
+            <li id="conferences-nav-item"><a href="#conferences" onclick="click()">conferences</a></li>
+            <li><a href="#resources" onclick="click()">resources</a></li>
+            <li><a href="#symposium" onclick="click()">symposium</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="infocontainer">
+      <div id="about">
+        <div id="line"></div>
+        <div id = "title">hiya, i'm tina!</div>
+        <h1 id = "aboutdesc">
+          <div>i am a recent graduate of university of southern california.
+            i studied computer science and games.
+            i am an incoming software eng @google!
+          </div>
+        </h1>
+        <div class="photobook">
+          <img id="hiking-photo" data-tilt src="designs/photos/hiking.jpg"/>
+          <img id="me-photo" data-tilt src="designs/photos/me!.jpg"/>
+          <img id="merciv-photo" data-tilt src="designs/photos/merciv.jpg"/>
+        </div>
+        <div class="corevalues">
+          <div id="corevalues-intro">this past year, i reflected on how i grew in the last 22 years.
+            with several hundred sticky notes and pen, i drew out the the core values
+            i serve and hope to serve. the map here is not complete and constantly improving.
+            here are my current thoughts below:</div>
+          </div>
+          <img id="corevalues-doodle" src="designs/core_vals.jpg">
+        </div>
+        <div id="line"></div>
+
+        <div class="experiences">
+          <div id = "title">experiences</div>
+          <div class="grid">
+              <a id="card" data-tilt href="https://github.com/ahmanson-lab/terraforming-mars-vr">
+                <h2><span id="emoji"> 🚀</span> terraforming mars in vr</h2>
+                <p>built in unity + tested in oculus vr</p>
+              </a>
+              <a id="card" data-tilt href="https://bbcooper2.wixsite.com/merciv">
+                <h2><span id="emoji">🎆</span>merciv: augmented reality @music festivals</h2>
+                <p>utilized magic leap plugins in unity to create an ar music rhythm game</p>
+              </a>
+              <a id="card" data-tilt href="https://gsuiteupdates.googleblog.com/2018/08/activity-dashboard-available-all-GSuite.html">
+                <h2><span id="emoji">📈</span>internship: analytics in google drive</h2>
+                <p>created new entrypoint for activity dashboard (fullstack web dev)</p>
+              </a>
+              <a id="card" data-tilt href="#disney">
+                <h2><span id="emoji">🐭</span>internship: disney internal tool</h2>
+                <p>built in reactjs</p>
+              </a>
+              <a id="card" data-tilt href="https://youtubego.com/">
+                <h2><span id="emoji">▶️</span>internship: youtube go</h2>
+                <p>used java+python to speed up automated testing process in backend</p>
+              </a>
+              <a id="card" data-tilt href="http://www.userbehavioristics.com/#user-behavioristics">
+                <h2><span id="emoji">🎮</span>internship: user experience intern</h2>
+                <p>studied gameplay on playtests for mobile games and apps</p>
+              </a>
+              <a id="card" data-tilt href="http://www.sweusc.com/">
+                <h2><span id="emoji">⚙️</span>leadership: society of women eng committee</h2>
+                <p>served as corporate and student affairs officer for USC SWE</p>
+              </a>
+              <a id="card" data-tilt href="https://www.facebook.com/GITUSC/">
+                <h2><span id="emoji">👩‍💻</span>leadership: girls in tech director board</h2>
+                <p>served as corporate and communications director</p>
+              </a>
+          </div>
+        </div>
+
+        <div id="line"></div>
+        <div class="conferences">
+          <div id = "title">conferences</div>
+        </div>
+
+        <div id="bottom-line"></div>
+
+        <div class="schedule-coffee">
+          <a href="mailto:tina.r9678@gmail.com">
+            <div id="connection-intro">coffee convos?</div>
+          </a>
+          <div id="connection-body">i love building my community and network!</div>
+          <a href="mailto:tina.r9678@gmail.com">
+            <span class="emoji-container">
+              <img id="coffee-emoji" src="designs/coffee.png"/>
+              <img id="wave-emoji" src="designs/wave.png"/>
+            </span>
+          </a>
+          <div id="connection-social">you can also reach me on my @social</div>
+        </div>
+    </div>
+
+    <!-- start of social media -->
+    <!-- credit to: https://codepen.io/vpdemo/pen/dPdymj -->
+    <br/>
+    <div align="center" class="socialbtns">
+      <ul>
+        <li><a href="https://twitter.com/ryu_tina" class="fa fa-lg fa-twitter"></a></li>
+        <li><a href="https://github.com/tinar9678/" class="fa fa-lg fa-github"></a></li>
+        <li><a href="https://www.linkedin.com/in/tina-ryu-58725310a/" class="fa fa-lg fa-linkedin"></a></li>
+        <li><a href="https://www.instagram.com/tinaaryu/" class="fa fa-lg fa-instagram"></a></li>
+      </ul>
+    </div>
+    <!-- end of social media -->
+    <a href="resume.pdf">
+      <div id="connection-resume">check out my resumé</div>
+    </a>
+    <script src="https://fb.me/react-0.14.3.js"></script>
+    <script src="https://fb.me/react-dom-0.14.3.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="./node_modules/tilt.js/dest/tilt.jquery.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="./js/main.js" type = "text/babel"></script>
+  </body>
+</html>
