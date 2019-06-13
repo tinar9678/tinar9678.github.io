@@ -120,7 +120,18 @@ body {
   border-radius: 4px;
 }
 
-#aboutdesc, #corevalues-intro  {
+#conference-photo {
+  border: 10px solid #ddd;
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+#aboutdesc, #corevalues-intro, #conferences-desc  {
   display: block; /* This will put the pseudo element on its own line. */
   padding-left: 7%;
   padding-right: 7%;
